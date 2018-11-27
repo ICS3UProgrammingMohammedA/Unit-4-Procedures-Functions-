@@ -16,5 +16,11 @@ namespace ConvertToFarMohammed
         {
             InitializeComponent();
         }
+
+        public void ConvertToFar(int tf, int tc)
+        {
+            int degrees;
+            
+        }
     }
 }
