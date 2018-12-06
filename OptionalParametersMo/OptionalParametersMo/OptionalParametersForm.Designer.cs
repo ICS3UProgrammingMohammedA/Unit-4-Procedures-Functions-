@@ -146,6 +146,7 @@
             this.btnEnter.TabIndex = 11;
             this.btnEnter.Text = "Enter";
             this.btnEnter.UseVisualStyleBackColor = true;
+            this.btnEnter.Click += new System.EventHandler(this.btnEnter_Click);
             // 
             // frmOptionalParameters
             // 
@@ -167,7 +168,6 @@
             this.Controls.Add(this.lblWords);
             this.Name = "frmOptionalParameters";
             this.Text = "Optional Parameters By Mohammed";
-            
             this.ResumeLayout(false);
             this.PerformLayout();
 
