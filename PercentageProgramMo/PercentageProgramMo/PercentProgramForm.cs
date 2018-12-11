@@ -1,4 +1,13 @@
-﻿using System;
+﻿/*
+ * Created by: Mohammed Alnajeh
+ * Created on: 2018-12-10
+ * Created for: ICS3U Programming
+ * Daily Assignment – Day #30 - Temperature Converter
+ * This program...
+*/
+
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,8 +23,7 @@ namespace PercentageProgramMo
     {
         public frmPercentProgram()
         {
-            InitializeComponent();
-            
+            InitializeComponent();  
         }
 
         private int ConvertToPercent(string level)
@@ -84,10 +92,22 @@ namespace PercentageProgramMo
 
                 default:
                     percentage = -1;
-                        break;
+                    break;
             }
             return percentage;
         }
 
+        private void btnEnter_Click(object sender, EventArgs e)
+        {
+            string level = "";
+            int percentage;
+
+            level = Convert.ToString(txtGrade.Text);
+            Console.WriteLine(level);
+
+            percentage = ConvertToPercent(level);
+
+            this.lblAverage.Text = ("Percentage = " + percentage + "%");
+        }
     }
 }
