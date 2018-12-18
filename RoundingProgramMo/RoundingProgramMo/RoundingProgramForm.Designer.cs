@@ -84,6 +84,7 @@
             this.btnRound.TabIndex = 4;
             this.btnRound.Text = "Round";
             this.btnRound.UseVisualStyleBackColor = true;
+            this.btnRound.Click += new System.EventHandler(this.btnRound_Click);
             // 
             // frmRoundingProgram
             // 
